@@ -1,0 +1,16 @@
+@import '../../color/vars';
+@import '../vars';
+
+.text_title_start {
+    color: white;
+    text-align: center;
+    font-size: $big-title;
+
+    .fandom {
+        color: $blue;
+    }
+
+    .position {
+        color: $purple;
+    }
+}

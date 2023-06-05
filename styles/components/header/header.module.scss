@@ -1,0 +1,35 @@
+@import '../../text/vars';
+@import '../../color/vars';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+
+    .icon {
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: $middle;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: $purple;
+        }
+    }
+
+    .search {
+
+    }
+}

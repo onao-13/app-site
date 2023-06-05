@@ -1,0 +1,21 @@
+.tapes {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    transform: rotate(355deg);
+    width: 97%;
+
+    .top_tape {
+        width: 100%;
+    }
+
+    .bottom_tape {
+        width: 100%;
+    }
+
+    .gap {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+}

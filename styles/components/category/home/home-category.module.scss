@@ -1,0 +1,62 @@
+@import '../../../color/vars';
+@import '../../../text/vars';
+
+.home_category {
+    display: flex;
+    flex-direction: column;
+
+    .category_title {
+        display: flex;
+        align-items: end;
+        padding-bottom: 24px;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            
+            .category_name {
+                font-weight: 600;
+                font-size: $middle;
+                color: $purple;
+            }
+            
+            .main_title {
+                text-transform: uppercase;
+                font-size: $big-title;
+                font-weight: bold;
+
+                .last {
+                    color: $purple;
+                }
+            }
+        }
+
+        .right {
+            height: 82px;
+        }
+    }
+}
+
+.row {
+    .category_title {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+
+    .category_title {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .left {
+            gap: 20px;
+        }
+    }
+}

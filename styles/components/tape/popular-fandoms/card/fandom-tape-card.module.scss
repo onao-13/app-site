@@ -1,0 +1,22 @@
+@import '../../../../text/vars';
+
+.tape_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 360px;
+    height: 360px;
+    
+    img {
+        border-radius: 24px;
+    }
+
+    .tape_name {
+        padding-left: 40px;
+        padding-top: 260px;
+        font-weight: 800;
+        font-size: $middle;
+        position: absolute;
+        // color: white;
+    }
+}

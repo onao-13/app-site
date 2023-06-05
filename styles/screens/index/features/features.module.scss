@@ -1,0 +1,41 @@
+@import '../../../text/vars';
+@import '../../../color/vars';
+
+.features_platform {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 24px;
+    justify-content: space-between;
+    background-color: $dark;
+    border-radius: 24px;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    .image {
+        width: 49%;
+    }
+
+    .features {
+        width: 49%;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            li {
+                width: 90%;
+                font-size: $small;
+                font-weight: 600;
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                gap: 4px;
+                color: white;
+            }
+        }
+    }
+}

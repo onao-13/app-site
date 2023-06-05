@@ -1,0 +1,35 @@
+@import '../../../text/vars';
+
+.registration_card {
+    width: 100%;
+    height: 800px;
+    background-image: url('../../../../public/mesh/mesh-1.png');
+    background-size: 100% 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    
+    .background {
+        width: 90%;
+        height: 80%;
+        background-color: #ffffff50;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20%;
+        
+        .title {
+            padding-top: 6%;
+            font-size: 52px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .background::before {
+        filter: blur(30);
+    }
+}

@@ -1,0 +1,23 @@
+.auth_dialog {
+  width: 90%;
+  height: 84%;
+  background-color: white;
+  border-radius: 24px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("../../../../public/mesh/mesh-4.png");
+  background-size: 100% 100%;
+}
+.auth_dialog .box {
+  width: 96%;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.3137254902);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=auth-dialog.module.css.map */

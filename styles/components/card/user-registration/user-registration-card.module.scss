@@ -1,0 +1,108 @@
+@import '../../../text/vars';
+@import '../../../color/vars';
+
+.box_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .user_card {
+        position: absolute;
+        z-index: 10;
+        width: 460px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        gap: 10px;
+        background-color: white;
+        border-radius: 24px;
+        -webkit-box-shadow: 0px 6px 8px 0px rgba(194, 167, 255, 0.6);
+        -moz-box-shadow: 0px 6px 8px 0px rgba(194, 167, 255, 0.6);
+        box-shadow: 0px 6px 8px 0px rgba(194, 167, 255, 0.6);
+        
+        .label_user_card {
+            background-image: $main-gradient;
+            border-radius: 24px;
+            margin-right: 20px;
+    
+            p {
+                padding: 6px 12px;
+                color: white;
+                font-size: 12px;
+            }
+        }
+
+        .box_content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            .nickname {
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-image: $main-gradient;
+                font-weight: 700;
+                font-size: $middle;
+            }
+        }
+    }
+    
+    .box_button {
+        animation: top 1.4s forwards; 
+    }
+}
+
+.box_button {
+    height: 90px;
+    width: 460px;
+    background-image: $main-gradient;
+    border-radius: 24px;
+}
+
+.button {
+    position: relative;
+    padding-top: 50px;
+    z-index: 3;
+    width: 460px;
+    height: 50px;
+    background-image: $main-gradient;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+
+    p {
+        font-weight: 700;
+        font-size: 22px;
+    }
+}
+
+.box_card:hover {
+    .box_button {
+        animation: bottom 1.4s forwards; 
+    }
+}
+
+
+@keyframes bottom {
+    from {
+        margin-top: 120px;
+    }
+    to {
+        margin-top: 180px;
+    }
+}
+
+@keyframes top {
+    from {
+        margin-top: 180px;
+    }
+    to {
+        margin-top: 120px;
+    }
+}

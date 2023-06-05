@@ -1,0 +1,37 @@
+@import '../../color/vars';
+@import '../../text/vars';
+
+.chip {
+    opacity: .8;
+    padding: 8px 20px;
+    border-radius: 24px;
+    display: inline-block;
+    
+    a {
+        font-size: $small;
+        margin: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+
+.dark {
+    background: $dark-vinous;
+
+    a {
+        color: white;
+    }
+}
+
+.light {
+    background: $light-pink;
+
+    a {
+        color: black;
+    }
+}
+
+.chip::before {
+    filter: blur(20px);
+}

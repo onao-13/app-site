@@ -1,0 +1,21 @@
+@import '../../../color/vars';
+@import '../../../text/vars';
+
+.signin {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: $main-gradient;
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
