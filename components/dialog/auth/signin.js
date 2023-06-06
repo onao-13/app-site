@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import styles from '../../../styles/components/dialog/auth/signin/signin.module.css';
 import Link from 'next/link';
+import { signIn } from '../../../api/auth/auth';
 
 export default function SignIn({ changeScreen }) {
     return (
@@ -42,6 +43,7 @@ function sendSigninData() {
     let email = document.querySelector('#email').value;
     let password = document.querySelector('#password').value;
 
-    signIn(email, password);
+    async () => signIn(email, password);
     // console.log("Email: " + email + ", Password: " + password);
 }
+

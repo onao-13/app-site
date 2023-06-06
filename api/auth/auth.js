@@ -1,21 +1,30 @@
-async function signIn(email, password) {
-    let res = await fetch("", {
+import { setActiveJwtToken, setRefreshJwtToken } from "../../store/local-store";
+
+export async function signIn(email, password) {
+    let jsonObj = {
+        "email": email,
+        "password": password
+    };
+
+    let res = await fetch("http://localhost:8090/api/auth/signin", {
         method: "POST",
-        body: JSON.stringify({
-            email: {email},
-            password: {password}
-        }),
+        body: JSON.stringify(jsonObj),
         headers: {
             "Content-type": "application/json; charset=UTF-8"
         }
     });
-    let json = await res.json(); 
 
-    let data = JSON.parse(json);
-
-    console.log(data);
+    if (res.ok) {
+        let json = await res.json(); 
+        saveTokens(json.token, json.refreshToken)
+    }
 }
 
-async function signUp() {
+export async function signUp() {
+    
+}
 
+function saveTokens(accessToke, refreshToken) {
+    setActiveJwtToken(accessToke);
+    setRefreshJwtToken(refreshToken);
 }

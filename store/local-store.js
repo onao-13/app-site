@@ -1,15 +1,15 @@
-function getActiveJwtToken() {
+export function getActiveJwtToken() {
     return localStorage.getItem("active-token");
 }
 
-function setActiveJwtToken(jwtToken) {
+export function setActiveJwtToken(jwtToken) {
     localStorage.setItem("active-token", jwtToken);
 }
 
-function getRefreshJwtToken() {
+export function getRefreshJwtToken() {
     return localStorage.getItem("refresh-token");
 }
 
-function setRefreshJwtToken(jwtToken) {
+export function setRefreshJwtToken(jwtToken) {
     localStorage.setItem("refresh-token", jwtToken);   
 }
