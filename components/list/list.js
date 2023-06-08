@@ -1,4 +1,4 @@
-import styles from '../../styles/components/list/list.module.css';
+import styles from '../../styles/components/list/list.module.scss';
 
 export default function List({ children }) {
     return <div className={styles.list}>{children}</div>;

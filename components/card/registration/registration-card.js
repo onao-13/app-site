@@ -1,4 +1,4 @@
-import styles from '../../../styles/components/card/registration/registration-card.module.css';
+import styles from '../../../styles/components/card/registration/registration-card.module.scss';
 import UserRegistrationCard from './user-registration-card';
 import AuthDialog from '../../dialog/auth/auth-dialog';
 import { useState } from 'react';

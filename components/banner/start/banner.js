@@ -1,4 +1,4 @@
-import styles from '../../../styles/components/banner/start/banner.module.css';
+import styles from '../../../styles/components/banner/start/banner.module.scss';
 import Image from 'next/image';
 import PagePaddings from '../../global/paddings';
 

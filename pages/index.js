@@ -3,7 +3,7 @@ import CategoryChip from "../components/chip/dark-category-chip";
 import List from "../components/list/list";
 import StarterBanner from "../components/banner/start/banner";
 import PagePaddings from "../components/global/paddings";
-import styles from '../styles/screens/index/index.module.css';
+import styles from '../styles/screens/index/index.module.scss';
 import TitleStartText from "../components/text/title-start-text";
 import HomeCategory from "../components/category/home-category";
 import Head from "next/head";

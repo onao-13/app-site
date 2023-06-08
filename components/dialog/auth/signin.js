@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import styles from '../../../styles/components/dialog/auth/signin/signin.module.css';
+import styles from '../../../styles/components/dialog/auth/signin/signin.module.scss';
 import Link from 'next/link';
 import { signIn } from '../../../api/auth/auth';
 

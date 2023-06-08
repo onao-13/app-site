@@ -1,5 +1,5 @@
 import Modal from 'react-modal';
-import styles from '../../../styles/components/dialog/auth/auth-dialog.module.css';
+import styles from '../../../styles/components/dialog/auth/auth-dialog.module.scss';
 import { useEffect, useState } from 'react';
 import SignIn from './signin';
 import SignUp from './signup';

@@ -1,4 +1,4 @@
-import styles from "../../styles/components/header/header.module.css";
+import styles from "../../styles/components/header/header.module.scss";
 import SigninButton from "../button/signin-button";
 import Search from "../input/search";
 import AuthDialog from '../dialog/auth/auth-dialog';

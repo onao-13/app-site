@@ -1,4 +1,4 @@
-import styles from '../../../styles/components/card/user-registration/user-registration-card.module.css';
+import styles from '../../../styles/components/card/user-registration/user-registration-card.module.scss';
 import Image from 'next/image';
 
 export default function UserRegistrationCard({ openAuthWindow }) {

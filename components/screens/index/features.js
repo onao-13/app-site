@@ -1,4 +1,4 @@
-import styles from '../../../styles/screens/index/features/features.module.css';
+import styles from '../../../styles/screens/index/features/features.module.scss';
 import Image from 'next/image';
 
 export default function PlatformFeatures() {

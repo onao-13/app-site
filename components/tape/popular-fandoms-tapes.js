@@ -1,5 +1,5 @@
 import anime from "animejs";
-import styles from '../../styles/components/tape/popular-fandoms/popular-fandoms-tapes.module.css';
+import styles from '../../styles/components/tape/popular-fandoms/popular-fandoms-tapes.module.scss';
 import FandomTapeCard from "./fandom-tape-card";
 import { useEffect } from 'react';
 import Marquee from "react-fast-marquee";

@@ -1,4 +1,4 @@
-import styles from '../../styles/components/chip/category-chip.module.css';
+import styles from '../../styles/components/chip/category-chip.module.scss';
 
 export default function CategoryChip({ isDark, name, link}) {
     let style

@@ -1,6 +1,6 @@
-import styles from '../../../styles/components/card/content/post/post-card.module.css';
+import styles from '../../../styles/components/card/content/post/post-card.module.scss';
 import Image from 'next/image';
-import filter from '../../../styles/filter/white/color-filter-white.module.css';
+import filter from '../../../styles/filter/white/color-filter-white.module.scss';
 
 export default function PostCard({ title, description, iconUrl }) {
     return (

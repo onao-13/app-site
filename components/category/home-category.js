@@ -1,4 +1,4 @@
-import styles from '../../styles/components/category/home/home-category.module.css';
+import styles from '../../styles/components/category/home/home-category.module.scss';
 import BubbleButton from '../button/button-with-bubble';
 
 /**

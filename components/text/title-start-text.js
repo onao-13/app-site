@@ -1,4 +1,4 @@
-import styles from '../../styles/text/title/title-start-text.module.css';
+import styles from '../../styles/text/title/title-start-text.module.scss';
 
 export default function TitleStartText({ blockText1, fandom, blockText2, position }) {
     return (

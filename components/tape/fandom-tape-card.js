@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from '../../styles/components/tape/popular-fandoms/card/fandom-tape-card.module.css';
+import styles from '../../styles/components/tape/popular-fandoms/card/fandom-tape-card.module.scss';
 
 export default function FandomTapeCard({ name, iconUrl }) {
     return (

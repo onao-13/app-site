@@ -1,4 +1,4 @@
-import styles from '../../../styles/components/card/sponsored/sponsored-content-card.module.css';
+import styles from '../../../styles/components/card/sponsored/sponsored-content-card.module.scss';
 
 export default function SponsoredContentCard() {
     return (
