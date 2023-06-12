@@ -12,8 +12,14 @@ import PopularFandomsTapes from "../components/tape/popular-fandoms-tapes";
 import RegistrationCard from "../components/card/registration/registration-card";
 import PostCard from "../components/card/content/post-card";
 import SponsoredContentCard from "../components/card/sponsored/sponsored-content-card";
+import { isLogin } from "../navigation/is-login";
+import { useRouter } from "next/router";
 
 export default function Index() {
+    let route = useRouter();
+
+    changePageIsUserLogin(route);
+
     let arr = ["test1", "test2"]; 
     let posts = [
         ["test1", "test1", ""], 
@@ -99,4 +105,12 @@ export default function Index() {
             <SponsoredContentCard />
         </div>
     );
+}
+
+async function changePageIsUserLogin(route) {
+    let res = await isLogin();
+
+    if (res) {
+        route.push('user/home');
+    }
 }

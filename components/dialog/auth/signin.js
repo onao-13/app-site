@@ -2,8 +2,12 @@ import { useEffect } from 'react';
 import styles from '../../../styles/components/dialog/auth/signin/signin.module.scss';
 import Link from 'next/link';
 import { signIn } from '../../../api/auth/auth';
+import { getActiveJwtToken } from '../../../store/token-store';
+import { useRouter } from 'next/router';
 
 export default function SignIn({ changeScreen }) {
+    let router = useRouter();
+
     return (
         <div className={styles.signin}>
             <div className={styles.left}>
@@ -21,11 +25,18 @@ export default function SignIn({ changeScreen }) {
                         Не помнишь пароль?
                     </Link>
                     {/* <p className={styles.forgot_password}></p> */}
-                    <button onClick={() => {
-                        sendSigninData()
-                    }
-                    }>Войти</button>
                 </form>
+                <button onClick={async () => {
+                    let res = await sendSigninData();
+
+                    if (res) {
+                    
+                        router.push('/user/home');
+                    } else {
+                        
+                    }
+                }
+                }>Войти</button>
                 <button 
                     className={styles.not_account}
                     onClick={changeScreen}
@@ -43,7 +54,6 @@ function sendSigninData() {
     let email = document.querySelector('#email').value;
     let password = document.querySelector('#password').value;
 
-    async () => signIn(email, password);
-    // console.log("Email: " + email + ", Password: " + password);
+    return signIn(email, password);
 }
 

@@ -1,4 +1,4 @@
-import { setActiveJwtToken, setRefreshJwtToken } from "../../store/local-store";
+import { setActiveJwtToken, setRefreshJwtToken } from "../../store/token-store";
 
 export async function signIn(email, password) {
     let jsonObj = {
@@ -16,8 +16,11 @@ export async function signIn(email, password) {
 
     if (res.ok) {
         let json = await res.json(); 
-        saveTokens(json.token, json.refreshToken)
+        saveTokens(json.token, json.refreshToken);
+        return true;
     }
+
+    return false;
 }
 
 export async function signUp() {
